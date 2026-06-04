@@ -288,11 +288,19 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 36px;
-    height: 36px;
+    width: 38px;
+    height: 38px;
     border-radius: var(--radius-md);
-    background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
-    color: #ffffff;
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    color: var(--accent-primary);
+    transition: var(--transition-smooth);
+}
+
+.logo:hover .logo-icon {
+    background-color: var(--bg-tertiary);
+    border-color: var(--accent-secondary);
+    transform: rotate(5deg) scale(1.05);
 }
 
 .logo-text {
