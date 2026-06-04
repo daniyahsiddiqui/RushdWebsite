@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rushd LLC | AI Automation for Manufacturing & Construction</title>
+    <meta name="description" content="Rushd LLC is an engineering-driven AI consultancy simplifying and automating complex workflows, estimating, blueprints, and drawing submittals for manufacturing and construction businesses.">
+    
+    <!-- Open Graph / Social Meta -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rushd-ai.com/">
+    <meta property="og:title" content="Rushd LLC | AI Automation for Manufacturing & Construction">
+    <meta property="og:description" content="We simplify and automate complex day-to-day processes using AI. Engineered for manufacturing, construction, and small businesses.">
+    <meta property="og:image" content="https://rushd-ai.com/assets/og-image.jpg">
+
+    <!-- Fonts: Outfit (Header) and Inter (Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Top Announcement Bar -->
+    <div class="announcement-bar">
+        <span>🚀 Free AI Workflow Assessment for Peoria local businesses. <a href="#contact">Get started &rarr;</a></span>
+    </div>
+
+    <!-- Header / Navigation -->
+    <header class="site-header">
+        <div class="container header-container">
+            <a href="#" class="logo" id="logo-link">
+                <span class="logo-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 15V9C4 5.13401 7.13401 2 11 2H13C16.866 2 20 5.13401 20 9V15C20 18.866 16.866 22 13 22H11C7.13401 22 4 18.866 4 15Z" stroke="currentColor" stroke-width="2"/>
+                        <path d="M12 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M8 10C8.5 11 9.5 12 12 12C14.5 12 15.5 11 16 10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </span>
+                <span class="logo-text">Rushd <span class="accent-text">AI</span></span>
+            </a>
+            
+            <nav class="main-nav" id="main-nav">
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#calculator">Savings Calculator</a></li>
+                    <li><a href="#process">How it Works</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact" class="nav-cta">Consult Now</a></li>
+                </ul>
+            </nav>
+
+            <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="grid-background"></div>
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="badge fade-in">
+                        <span class="badge-dot"></span>
+                        <span class="badge-text">AI Integrations & Workflow Automation</span>
+                    </div>
+                    <h1 class="fade-in">AI Engineering for Real-World Industry</h1>
+                    <p class="hero-subtitle fade-in">We are experienced engineers helping Peoria's manufacturing, construction, and fabrication businesses automate estimating, blueprint parsing, and manual workflow overhead with robust, custom AI tools.</p>
+                    
+                    <div class="hero-actions fade-in">
+                        <a href="#calculator" class="btn btn-primary">
+                            <span>Calculate Your Savings</span>
+                            <i data-lucide="calculator"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <span>Talk to an Engineer</span>
+                            <i data-lucide="arrow-right"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="hero-trust fade-in">
+                        <span class="trust-title">Our technology integrates with:</span>
+                        <div class="trust-icons">
+                            <span class="trust-tag"><i data-lucide="file-text"></i> PDF Drawings</span>
+                            <span class="trust-tag"><i data-lucide="database"></i> ERP & CRM</span>
+                            <span class="trust-tag"><i data-lucide="layers"></i> Procore / CAD</span>
+                            <span class="trust-tag"><i data-lucide="mail"></i> Email & Bid Portals</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual fade-in">
+                    <div class="visual-card-wrapper">
+                        <div class="glow-effect"></div>
+                        <div class="visual-card">
+                            <div class="card-header">
+                                <div class="dots">
+                                    <span class="dot red"></span>
+                                    <span class="dot yellow"></span>
+                                    <span class="dot green"></span>
+                                </div>
+                                <div class="window-title">Rushd AI Automation Pipeline</div>
+                                <div class="status-indicator online">Active</div>
+                            </div>
+                            <div class="card-body">
+                                <div class="pipeline-step completed">
+                                    <div class="step-icon"><i data-lucide="file-digit"></i></div>
+                                    <div class="step-info">
+                                        <span class="step-label">Ingest Drawing (PDF/CAD)</span>
+                                        <span class="step-meta">Received drawing "A-102_Layout.pdf"</span>
+                                    </div>
+                                    <div class="step-status"><i data-lucide="check-circle-2"></i></div>
+                                </div>
+                                
+                                <div class="pipeline-connector"></div>
+                                
+                                <div class="pipeline-step processing">
+                                    <div class="step-icon spinner"><i data-lucide="cpu"></i></div>
+                                    <div class="step-info">
+                                        <span class="step-label">Automated Spec Extraction</span>
+                                        <span class="step-meta">Generating Bill of Materials (BOM) & measurements...</span>
+                                    </div>
+                                    <div class="step-status text-pulse">Processing</div>
+                                </div>
+                                
+                                <div class="pipeline-connector pending"></div>
+                                
+                                <div class="pipeline-step pending">
+                                    <div class="step-icon"><i data-lucide="send"></i></div>
+                                    <div class="step-info">
+                                        <span class="step-label">Push to CRM & ERP</span>
+                                        <span class="step-meta">Auto-filling estimate draft and materials order</span>
+                                    </div>
+                                    <div class="step-status"><i data-lucide="clock"></i></div>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <span class="metric-label">Efficiency Gain:</span>
+                                <span class="metric-value">+82% Speedup</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">What We Do</span>
+                    <h2>Tailored AI Solutions for Complex Workflows</h2>
+                    <p>We replace repetitive administrative tasks and slow paper processes with production-grade AI intelligence designed by veteran engineers.</p>
+                </div>
+
+                <div class="services-grid">
+                    <!-- Service 1 -->
+                    <div class="service-card fade-in">
+                        <div class="service-icon">
+                            <i data-lucide="binary"></i>
+                        </div>
+                        <h3>Drawing & Spec Extraction</h3>
+                        <p>Automatically extract measurements, metal grades, structural counts, and hardware specs from complex engineering drawings or blueprints in seconds.</p>
+                        <ul class="service-bullets">
+                            <li><i data-lucide="check"></i> 99% accuracy on PDF/CAD scans</li>
+                            <li><i data-lucide="check"></i> Automated Bill of Materials (BOM)</li>
+                            <li><i data-lucide="check"></i> Direct integration with estimating tools</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="service-card fade-in">
+                        <div class="service-icon">
+                            <i data-lucide="clipboard-check"></i>
+                        </div>
+                        <h3>AI-Driven Estimating & Bids</h3>
+                        <p>Stop losing days waiting on RFP reviews. Our agents parse incoming bid documents, identify requirements, and draft highly accurate initial estimates.</p>
+                        <ul class="service-bullets">
+                            <li><i data-lucide="check"></i> Submittal requirement checkers</li>
+                            <li><i data-lucide="check"></i> Historical price data intelligence</li>
+                            <li><i data-lucide="check"></i> Bid risk factor identification</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="service-card fade-in">
+                        <div class="service-icon">
+                            <i data-lucide="git-pull-request"></i>
+                        </div>
+                        <h3>Workflow Automation</h3>
+                        <p>Connect your shop floor, job site, and office tools. Automate document flow, material approvals, purchase matching, and scheduling notifications.</p>
+                        <ul class="service-bullets">
+                            <li><i data-lucide="check"></i> QuickBooks & ERP syncing</li>
+                            <li><i data-lucide="check"></i> SMS/Slack field updates</li>
+                            <li><i data-lucide="check"></i> PDF-to-database automatic entry</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Calculator Section -->
+        <section id="calculator" class="calculator-section">
+            <div class="container">
+                <div class="calculator-wrapper">
+                    <div class="calculator-info">
+                        <span class="section-subtitle">ROI Calculator</span>
+                        <h2>See How Much AI Automation Saves You</h2>
+                        <p>Calculate your potential overhead savings by automating manual drawing reviews, bid parsing, and administrative data entry.</p>
+                        
+                        <div class="benefits-callout">
+                            <div class="benefit-item fade-in">
+                                <div class="benefit-icon"><i data-lucide="clock-3"></i></div>
+                                <div>
+                                    <h4>Reclaim Productive Hours</h4>
+                                    <p>Redirect estimators and engineers from manual transcription to actual bid winning and shop oversight.</p>
+                                </div>
+                            </div>
+                            <div class="benefit-item fade-in">
+                                <div class="benefit-icon"><i data-lucide="shield-check"></i></div>
+                                <div>
+                                    <h4>Minimize Pricey Errors</h4>
+                                    <p>Manual drawing interpretation leads to missed materials. AI cross-checks blueprints with 100% data fidelity.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- The Calculator UI -->
+                    <div class="calculator-card">
+                        <h3>Savings Calculator</h3>
+                        
+                        <div class="input-group">
+                            <div class="input-header">
+                                <label for="hours-input">Manual Workflow Hours (Per Week)</label>
+                                <span class="input-val-badge" id="hours-val">15 Hours</span>
+                            </div>
+                            <input type="range" id="hours-input" min="5" max="100" step="5" value="15" class="slider">
+                            <div class="slider-labels">
+                                <span>5 hrs</span>
+                                <span>50 hrs</span>
+                                <span>100 hrs</span>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <div class="input-header">
+                                <label for="rate-input">Average Loaded Hourly Rate ($)</label>
+                                <span class="input-val-badge" id="rate-val">$45/hr</span>
+                            </div>
+                            <input type="range" id="rate-input" min="20" max="150" step="5" value="45" class="slider">
+                            <div class="slider-labels">
+                                <span>$20/hr</span>
+                                <span>$85/hr</span>
+                                <span>$150/hr</span>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <div class="input-header">
+                                <label for="projects-input">Monthly Bids / Submittals Handled</label>
+                                <span class="input-val-badge" id="projects-val">10</span>
+                            </div>
+                            <input type="range" id="projects-input" min="2" max="50" step="1" value="10" class="slider">
+                            <div class="slider-labels">
+                                <span>2 bids</span>
+                                <span>25 bids</span>
+                                <span>50 bids</span>
+                            </div>
+                        </div>
+
+                        <div class="calculator-divider"></div>
+
+                        <div class="results-grid">
+                            <div class="result-box highlighted">
+                                <span class="result-label">Monthly Dollar Savings</span>
+                                <span class="result-number" id="monthly-savings">$2,340</span>
+                            </div>
+                            <div class="result-box">
+                                <span class="result-label">Hours Saved / Month</span>
+                                <span class="result-number" id="hours-saved">48 hrs</span>
+                            </div>
+                            <div class="result-box yearly-result">
+                                <span class="result-label">Projected Yearly Savings</span>
+                                <span class="result-number" id="yearly-savings">$28,080</span>
+                            </div>
+                        </div>
+
+                        <a href="#contact" class="btn btn-primary btn-block">
+                            <span>Claim This Automation Potential</span>
+                            <i data-lucide="zap"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process Section -->
+        <section id="process" class="process-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Our Method</span>
+                    <h2>Simple, Risk-Free Path to Automation</h2>
+                    <p>You don't need a massive IT department. We build, integrate, and host the intelligence for you, ensuring a seamless setup.</p>
+                </div>
+
+                <div class="process-steps">
+                    <!-- Step 1 -->
+                    <div class="step-card fade-in">
+                        <div class="step-num">01</div>
+                        <div class="step-content">
+                            <h3>Process Audit</h3>
+                            <p>We sit down with your team (virtually or locally in Peoria) to watch how estimates, drawings, or data flow through your business. We pinpoint the exact bottleneck costing you time.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="step-card fade-in">
+                        <div class="step-num">02</div>
+                        <div class="step-content">
+                            <h3>Proof of Concept</h3>
+                            <p>We build a secure, lightweight AI prototype using your actual documents (drawings, estimates, bills of lading) so you can see the speed and precision with zero production risk.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="step-card fade-in">
+                        <div class="step-num">03</div>
+                        <div class="step-content">
+                            <h3>Integration & Handoff</h3>
+                            <p>We deploy the automated flow to your existing tools (email, QuickBooks, cloud storage). No training courses required—the AI adapts to how you already do business.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container about-grid">
+                <div class="about-visual">
+                    <div class="badge">
+                        <span class="badge-dot"></span>
+                        <span class="badge-text">About Rushd LLC</span>
+                    </div>
+                    <h2>Experienced Engineers, Practical AI.</h2>
+                    <p>At Rushd LLC, we believe small businesses deserve the same competitive edge as multi-billion dollar enterprises. We are a consultancy of seasoned software and system engineers who are passionate about bringing modern automation technologies down to earth.</p>
+                    <p>We don't sell overhyped software subscriptions or abstract advice. We build tailored, high-performance connectors, drawing parsers, and custom intelligence pipelines that fit directly into your daily workflow.</p>
+                    
+                    <div class="about-metrics">
+                        <div class="metric">
+                            <span class="num">10+</span>
+                            <span class="desc">Years Engineering Experience</span>
+                        </div>
+                        <div class="metric">
+                            <span class="num">$0</span>
+                            <span class="desc">Licensing Overhead for Prototypes</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-philosophy-card">
+                    <h3>Why Work With Us?</h3>
+                    <ul class="phil-list">
+                        <li>
+                            <div class="list-icon"><i data-lucide="shield-check"></i></div>
+                            <div>
+                                <strong>Peoria Local & Accessible</strong>
+                                <p>We are proudly based in Peoria, IL. We can visit your manufacturing shop floor or construction office to align systems directly.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list-icon"><i data-lucide="database"></i></div>
+                            <div>
+                                <strong>Strict Data Security</strong>
+                                <p>Your engineering documents, bids, and client pricing data are confidential. We build on private cloud channels and keep data isolated.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list-icon"><i data-lucide="wrench"></i></div>
+                            <div>
+                                <strong>No Bloat or Locks</strong>
+                                <p>We don't lock you into subscription plans. We build transparently so you own the systems we integrate for you.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA / Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container contact-container">
+                <div class="contact-info-panel">
+                    <span class="section-subtitle">Get in Touch</span>
+                    <h2>Start Automating Today</h2>
+                    <p>Schedule a quick 15-minute introductory call with an engineer. We will review one of your manual processes and tell you exactly how it can be automated.</p>
+                    
+                    <div class="contact-details">
+                        <a href="mailto:hello@rushd-ai.com" class="detail-item">
+                            <i data-lucide="mail"></i>
+                            <div>
+                                <span>Email Us</span>
+                                <strong>hello@rushd-ai.com</strong>
+                            </div>
+                        </a>
+                        <a href="tel:6019801809" class="detail-item">
+                            <i data-lucide="phone"></i>
+                            <div>
+                                <span>Call Directly</span>
+                                <strong>(601) 980-1809</strong>
+                            </div>
+                        </a>
+                        <div class="detail-item">
+                            <i data-lucide="map-pin"></i>
+                            <div>
+                                <span>Based In</span>
+                                <strong>Peoria, IL</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <form id="contact-form" class="contact-form">
+                        <h3>Request a Free Process Assessment</h3>
+                        <p>Fill out this form and an engineer will follow up within one business day.</p>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" required placeholder="e.g. John Doe">
+                            </div>
+                            <div class="form-group">
+                                <label for="company">Company Name</label>
+                                <input type="text" id="company" name="company" required placeholder="e.g. Peoria Metal Works">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Work Email</label>
+                                <input type="email" id="email" name="email" required placeholder="e.g. john@peoriametal.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="industry">Industry / Field</label>
+                                <select id="industry" name="industry" required>
+                                    <option value="" disabled selected>Select your industry</option>
+                                    <option value="manufacturing">Manufacturing & Fabrication</option>
+                                    <option value="construction">Construction & Contracting</option>
+                                    <option value="engineering">Engineering Services</option>
+                                    <option value="other">Other Small Business</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">What manual processes are slowing you down?</label>
+                            <textarea id="message" name="message" rows="4" placeholder="e.g. We spend 10 hours a week extracting specs from drawing PDFs to write customer bids."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <span>Submit Request</span>
+                            <i data-lucide="send"></i>
+                        </button>
+                        
+                        <div class="form-status" id="form-status"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <span class="logo-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 15V9C4 5.13401 7.13401 2 11 2H13C16.866 2 20 5.13401 20 9V15C20 18.866 16.866 22 13 22H11C7.13401 22 4 18.866 4 15Z" stroke="currentColor" stroke-width="2"/>
+                            <path d="M12 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M8 10C8.5 11 9.5 12 12 12C14.5 12 15.5 11 16 10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </span>
+                    <span class="logo-text">Rushd <span class="accent-text">AI</span></span>
+                </a>
+                <p>Engineering AI-driven solutions to automate, simplify, and scale small businesses in manufacturing, construction, and beyond.</p>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Solutions</h4>
+                <ul>
+                    <li><a href="#services">Drawing Specs Extraction</a></li>
+                    <li><a href="#services">Automated Estimating</a></li>
+                    <li><a href="#services">Workflow Integration</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#about">About Rushd LLC</a></li>
+                    <li><a href="#calculator">ROI Calculator</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Location & Contact</h4>
+                <p class="footer-contact-info">
+                    Peoria, IL<br>
+                    <a href="mailto:hello@rushd-ai.com">hello@rushd-ai.com</a><br>
+                    <a href="tel:6019801809">(601) 980-1809</a>
+                </p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container bottom-container">
+                <p>&copy; 2026 Rushd LLC. All rights reserved. Registered in Peoria, Illinois. Domain: rushd-ai.com</p>
+                <div class="footer-socials">
+                    <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                    <a href="#" aria-label="GitHub"><i data-lucide="github"></i></a>
+                    <a href="#" aria-label="Twitter/X"><i data-lucide="twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
